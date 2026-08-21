@@ -1,0 +1,144 @@
+@'
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+.narrow {
+    max-width: 800px;
+}
+
+header {
+    border-bottom: 1px solid #e5e7eb;
+    background: #ffffff;
+}
+
+header .container {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.brand {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a,
+footer a {
+    color: #4059c9;
+    text-decoration: none;
+}
+
+nav a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 110px 0;
+    background: #f5f7ff;
+}
+
+.eyebrow {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #4059c9;
+}
+
+h1 {
+    max-width: 800px;
+    margin: 15px 0;
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+}
+
+h2 {
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.hero-text {
+    max-width: 700px;
+    font-size: 20px;
+    color: #596273;
+}
+
+.section {
+    padding: 85px 0;
+}
+
+.products {
+    background: #f8f9fb;
+}
+
+.product-card {
+    max-width: 500px;
+    margin-top: 35px;
+    padding: 30px;
+    border: 1px solid #e2e5eb;
+    border-radius: 16px;
+    background: #ffffff;
+}
+
+.product-card h3 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.product-card p {
+    margin: 5px 0;
+}
+
+.status {
+    color: #4059c9;
+    font-weight: 600;
+}
+
+footer {
+    padding: 35px 0;
+    border-top: 1px solid #e5e7eb;
+    color: #697386;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    header .container {
+        flex-direction: column;
+        padding: 18px 0;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 75px 0;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+}
+'@ | Set-Content styles.css
